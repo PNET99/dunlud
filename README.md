@@ -19,9 +19,9 @@
 
 ```
 # Edit config file
-Edit the required value in 'lindow.js', You can get the api key at [`LoL Human Rest API`](http://api.lolhuman.xyz/).
+Edit the required value in lindow.js, You can get the api key at [`LoL Human Rest API`](http://api.lolhuman.xyz/).
 ```cmd
-const apikey = 'YourApikey
+const apikey = 'YourApikey'
 ```
 
 * Note : This Bot no use prefix
