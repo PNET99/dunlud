@@ -16,6 +16,7 @@ const {
 const qrcode = require("qrcode-terminal")
 const moment = require("moment-timezone")
 const fs = require("fs")
+const axios = require("axios")
 const { color, bgcolor } = require('./lib/color')
 const base64Img = require('base64-img')
 const fetch = require('node-fetch')
