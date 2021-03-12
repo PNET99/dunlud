@@ -20,15 +20,23 @@ Edit the required value in lindow.js, You can get the api key at [`LoL Human Res
 const apikey = 'YourApikey'
 ```
 ## Available Feature
-* ytmp3 (send link auto download)
+
+## ytmp3 (send link auto download)
 
   Example :
 <img align="center" height="auto" src="https://i.ibb.co/sbFMDRT/IMG-20210312-004810.jpg"/>
 
-* play (query)
-* mp4 (link)
+## play (query)
+  
+  Example :
+<img align="center" height="auto" src="https://telegra.ph/file/9b07f75b8ecd70e49f5be.jpg"/>
 
-* Note : This Bot no use prefix
+## mp4 (link)
+
+  Example :
+<img align="center" height="auto" src="https://telegra.ph/file/9b07f75b8ecd70e49f5be.jpg"/>
+
+## Note : This Bot no use prefix
 
 ## My social media
 
