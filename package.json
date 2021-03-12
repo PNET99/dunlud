@@ -12,6 +12,7 @@
     "base64-img": "^1.0.4",
     "cfonts": "^2.9.0",
     "dotenv": "^8.2.0",
+    "axios": "^0.21.0",
     "escape-string-regexp": "^1.0.5",
     "fake-useragent": "^1.0.1",
     "fs": "^0.0.1-security",
