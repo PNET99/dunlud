@@ -21,20 +21,20 @@ const apikey = 'YourApikey'
 ```
 ## Available Feature
 
-## ytmp3 (send link auto download)
+## ytmp3
 
   Example :
 <img align="center" height="auto" src="https://i.ibb.co/sbFMDRT/IMG-20210312-004810.jpg"/>
 
-## play (query)
+## play
   
   Example :
-<img align="center" height="auto" src="https://telegra.ph/file/9b07f75b8ecd70e49f5be.jpg"/>
+<img align="center" height="auto" src="https://i.ibb.co/8YqscGp/Screenshot-2021-03-12-21-33-08-67.png"/>
 
 ## mp4 (link)
 
   Example :
-<img align="center" height="auto" src="https://telegra.ph/file/9b07f75b8ecd70e49f5be.jpg"/>
+<img align="center" height="auto" src="https://i.ibb.co/thQNScd/Screenshot-2021-03-12-21-23-13-44.png"/>
 
 ## Note : This Bot no use prefix
 
