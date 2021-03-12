@@ -77,7 +77,7 @@ lindow.on('message-new', async (lin) => {
             }
             if (perintah.includes("play")) {
             reply('*_Wait for a few minutes_*')
-            data = await fetchJson(`http://api.lolhuman.xyz/api/ytplay?apikey=${apikey}&query=${args[1]}`)
+            data = await fetchJson(`http://api.lolhuman.xyz/api/ytplay?apikey=${apikey}&query=${args[0]}`)
             if (Number(data.result.audio[0].size.split(' MB')[0]) >= 30.00) return reply(`*Data Berhasil Didapatkan!*\n\n*Title :* ${data.result.info.title}\n*Uploader :* ${data.result.info.uploader}\n\n*Duration :* ${data.result.info.duration}\n*View :* ${data.result.info.view}\n*Like :* ${data.result.info.like}\n*Dislike :* ${data.result.info.dislike}\n\n*Filesize* : ${data.result.audio[0].size}\n\n*Link* : ${data.result.audio[0].link}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
             teks = `*[ *PLAY MP3* ]\n\n*Title :* ${data.result.info.title}\n*Uploader :* ${data.result.info.uploader}\n\n*Duration :* ${data.result.info.duration}\n*View :* ${data.result.info.view}\n*Like :* ${data.result.info.like}\n*Dislike :* ${data.result.info.dislike}\n\n*Description :* ${data.result.info.description}\n\n*Bitrate :* ${data.result.audio[0].bitrate}\n*Size :* ${data.result.audio[0].size}\n\nWait a minute, sending audio..`
             thumb = await getBuffer(data.result.info.thumbnail)
@@ -87,13 +87,14 @@ lindow.on('message-new', async (lin) => {
             }
             if (perintah.includes("mp4")) {
             reply('*_Wait for a few minutes_*')
-            data = await fetchJson(`http://api.lolhuman.xyz/api/ytvideo?apikey=${apikey}&url=${args[1]}`)
+            data = await fetchJson(`http://api.lolhuman.xyz/api/ytvideo?apikey=${apikey}&url=${args[0]}`)
             if (Number(data.result.link[0].size.split(' MB')[0]) >= 30.00) return reply(`*Data Berhasil Didapatkan!*\n\n*Title :* ${data.result.title}\n*Uploader :* ${data.result.uploader}\n\n*Duration :* ${data.result.duration}\n*View :* ${data.result.view}\n*Like :* ${data.result.like}\n*Dislike :* ${data.result.dislike}\n\n*Filesize* : ${data.result.link[0].size}\n\n*Link* : ${data.result.link[0].link}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
             teks = `[ *YTMP4 DOWNLOADER* ]\n\n*Title :* ${data.result.title}\n*Uploader :* ${data.result.uploader}\n\n*Duration :* ${data.result.duration}\n*View :* ${data.result.view}\n*Like :* ${data.result.like}\n*Dislike :* ${data.result.dislike}\n\n*Description :* ${data.result.description}\n\n*Resolution :* ${data.result.link[0].resolution}\n*Size :* ${data.result.link[0].size}\n\nWait a minute, sending vidio...`
             get = await getBuffer(data.result.thumbnail)
             lindow.sendMessage(from, get, image, {qupted: lin, caption: teks})
             buff = await getBuffer(data.result.link[0].link)
             lindow.sendMessage(from, buff, video, {mimetype: 'video/mp4', filename: `${data.result.title}.mp4`, quoted: lin, caption: `${data.result.title}`})
+	    }
             } catch (e) {
 			console.log('Error : %s', color(e, 'red'))
 		}
