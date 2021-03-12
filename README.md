@@ -34,5 +34,5 @@ const apikey = 'YourApikey'
 ## Thanks to
 
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
-* [`LoLHuman`](https://github.com/LoLHuman)
+* [`LoLHuman`](https://github.com/LoL-Human)
 * [`Hafizh`](https://github.com/HAFizh-15)
