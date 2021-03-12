@@ -23,6 +23,10 @@ Edit the required value in lindow.js, You can get the api key at [`LoL Human Res
 ```cmd
 const apikey = 'YourApikey'
 ```
+## Available Feature
+* ytmp3 (send link auto download)
+* play (query)
+* mp4 (link)
 
 * Note : This Bot no use prefix
 
@@ -36,3 +40,4 @@ const apikey = 'YourApikey'
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 * [`LoLHuman`](https://github.com/LoL-Human)
 * [`Hafizh`](https://github.com/HAFizh-15)
+* [`Riyan`](https://github.com/Shitara999)
